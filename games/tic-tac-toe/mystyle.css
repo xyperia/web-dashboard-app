@@ -19,8 +19,21 @@ body{
   margin:auto;
   margin-right:20px;
   margin-left:20px;
-  width:60px;
-  height:50px;
+  border-radius:500%;
+  width:40px;
+  height:40px;
+  background:pink;
+  transition-duration:0.5s;
+}
+.xobutton:hover{
+  transition-duration:0.5s;
+  background:salmon;
+}
+#xbut:hover{
+  transform: rotateZ(-180deg);
+}
+#obut:hover{
+  transform: rotateZ(180deg);
 }
 #xobox{
   margin:auto;
@@ -40,6 +53,11 @@ body{
   color:black;
   font-size:70px;
   line-height:150px;
+  transition-duration:1s;
+}
+.box:hover{
+  background-color:#FE5858;
+  transform:scale(1.05);
 }
 
 

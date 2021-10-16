@@ -214,14 +214,18 @@ $(document).ready(function(){
 
     //Special Cases
      if(wex(1,1)&&wex(2,2)){if (cplay(2,0)) return true;}
-     
+    //Twesters
+     if(wex(0,1)&&wex(1,0)){if (cplay(1,1)) return true;}
+     if(wex(0,1)&&wex(1,2)){if (cplay(1,1)) return true;}
+     if(wex(1,0)&&wex(2,1)){if (cplay(1,1)) return true;}
+     if(wex(2,1)&&wex(1,2)){if (cplay(1,1)) return true;}
     
     //If nothing happend return false
      return false;
  }
   function playrnd(){
     for(var j=0;j<3;j++){
-      for(var i=0;i<3;i++){
+      for(var i=1;i<3;i++){
         if (cplay(i,j)) return true;
       }
     }
